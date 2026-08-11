@@ -1,0 +1,23 @@
+Doctor / Physician	
+doctor@healthcare.gov
+password
+
+Patient Self-Service
+patient@healthcare.gov
+password
+
+Lab Specialist	
+lab@healthcare.gov
+password
+
+Retail Pharmacist	
+pharmacy@healthcare.gov	
+password
+
+Hospital Administrator	
+hospadmin@healthcare.gov	
+password
+
+System Administrator	
+admin@healthcare.gov	
+password
