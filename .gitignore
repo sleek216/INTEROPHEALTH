@@ -13,6 +13,8 @@ dist-ssr
 *.local
 .env
 .env.local
+psswrd.txt
+data.txt
 
 # Editor directories and files
 .vscode/*
