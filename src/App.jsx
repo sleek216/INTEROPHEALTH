@@ -425,7 +425,7 @@ export default function App() {
       user: `${user?.name || 'Dr. Tariq Mahmood'} (${user?.role || 'Doctor'})`,
       action: 'Encounter Record Added',
       upi: searchUpi,
-      facility: `${user?.org || 'City General'} • Cloud DB`,
+      facility: `${user?.org || 'City General'} • HIE Network`,
       status: 'AUTHORIZED'
     };
     setAuditLogsList([auditEntry, ...auditLogsList]);
@@ -473,9 +473,9 @@ export default function App() {
         facility: user?.org || 'City General'
       }]);
     } catch (err) {
-      console.warn("Supabase insert encounter fallback:", err);
+      console.warn("Insert encounter notice:", err);
     }
-    alert('New Clinical Encounter logged successfully in Supabase DB!');
+    alert('New Clinical Encounter logged successfully in Central HIE Registry!');
   };
 
   const handleAddLabResult = async (e) => {
@@ -502,7 +502,7 @@ export default function App() {
       user: `${user?.name || 'Sara Ahmed'} (${user?.role || 'Lab Specialist'})`,
       action: 'Lab Result Uploaded',
       upi: searchUpi,
-      facility: `${user?.org || 'Apex Diagnostics'} • Cloud DB`,
+      facility: `${user?.org || 'Apex Diagnostics'} • HIE Network`,
       status: 'AUTHORIZED'
     };
     setAuditLogsList([auditEntry, ...auditLogsList]);
@@ -533,9 +533,9 @@ export default function App() {
         facility: user?.org || 'Apex Diagnostics'
       }]);
     } catch (err) {
-      console.warn("Supabase insert lab report fallback:", err);
+      console.warn("Insert lab report notice:", err);
     }
-    alert('Laboratory result uploaded successfully in Supabase DB!');
+    alert('Laboratory result uploaded successfully in Central HIE Registry!');
   };
 
   const handleContactSubmit = (e) => {
@@ -906,7 +906,7 @@ export default function App() {
             <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 font-manrope">
               <p className="text-xs text-slate-400 font-medium">&copy; 2026 InteropHealth Co. All rights reserved.</p>
               <div className="flex items-center gap-3 text-xs text-slate-400 font-medium">
-                <span>React + Supabase</span>
+                <span>Enterprise HIE Cloud</span>
                 <span className="text-slate-500 font-bold">•</span>
                 <span>HIPAA Compliant</span>
                 <span className="text-slate-500 font-bold">•</span>

@@ -62,7 +62,7 @@ export default function TopBar({ user, activeDashboardTab, isSupabaseConfigured,
           }`}
         >
           {isLive ? <Wifi className="w-2.5 h-2.5 sm:w-3 sm:h-3" /> : <WifiOff className="w-2.5 h-2.5 sm:w-3 sm:h-3" />}
-          <span className="hidden md:inline">{isLive ? 'Live Database' : 'Mock Database'}</span>
+          <span className="hidden md:inline">{isLive ? 'HIE Network Online' : 'HIE Local Mode'}</span>
         </span>
       </div>
 
